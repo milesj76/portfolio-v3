@@ -3,12 +3,17 @@
   import * as Sheet from "$lib/components/ui/sheet";
   import { Button } from "$lib/components/ui/button";
   import { MenuIcon } from "lucide-svelte";
+	import { goto } from "$app/navigation";
+
+  function navigate(target) {
+    goto(target)
+  }
 </script>
 
 <div>
   <nav class="flex justify-between items-center px-6 py-4">
     <div class="flex items-baseline space-x-4">
-      <h1 class="text-3xl font-bold">mB</h1>
+      <!-- <h1 class="text-3xl font-bold">mB</h1> -->
       <p class="tracking-tighter font-light text-base"><span class="font-bold text-3xl">m</span>iles <span class="font-bold text-3xl">B</span>urke</p>
     </div>
 
@@ -34,18 +39,35 @@
             Add Social Media Links here
           </Sheet.Description>
         </Sheet.Header>
-        <div class="flex flex-col">
-          <a href="#">Home</a>
-          <a href="#">Portfolio</a>
-          <a href="#">About</a>
-          <!-- <a href="#">Articles</a> -->
-        </div>
-        <Sheet.Footer>
+        <form class="flex flex-col space-y-2">
+          <Sheet.Close asChild let:builder>
+            <a href="/">Home</a>
+            <a href="#">Portfolio</a>
+            <a href="/about">About</a>
+            <!-- <a href="#">Articles</a> -->
+          </Sheet.Close>
+        </form>
+        <Sheet.Footer class='my-2'>
           <Button>Get In Touch</Button>
         </Sheet.Footer>
       </Sheet.Content>
     </Sheet.Root>
   </nav>
 
-  <slot />
+  <main>
+    <slot />
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      Little description of Miles
+    </div>
+    <div>
+      Social media links
+    </div>
+    <div>
+      Created by Miles Burke using Sveltekit
+    </div>
+  </footer>
 </div>

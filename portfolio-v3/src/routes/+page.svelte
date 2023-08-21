@@ -1,7 +1,25 @@
-<h1 class="text-3xl font-bold underline text-green-700">
-  Hello world!
-</h1>
+<script lang="ts">
+  import { db } from '$lib/db'
+</script>
 
-<style lang="postcss">
+<div>
+  <header>
+    <h1>Front-end Development and Software Engineering Solutions</h1>
+    <p>Hello! My name is Miles. I create websites and software to solve problems.</p>
+  </header>
 
-</style>
+  <!-- Main Skills -->
+  <section>
+    {#each $db.mainSkills as item}
+      <div>
+        <h2>{item.title}</h2>
+        <p>{item.desc}</p>
+      </div>
+    {/each}
+  </section>
+
+  <!-- Featured Work -->
+  <section>
+    <header><h1>Featured Work</h1></header>
+  </section>
+</div>
