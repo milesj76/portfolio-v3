@@ -2,18 +2,21 @@
   import { db } from '$lib/db'
 </script>
 
-<div>
-  <header>
-    <h1>Front-end Development and Software Engineering Solutions</h1>
-    <p>Hello! My name is Miles. I create websites and software to solve problems.</p>
+<div class="flex flex-col justify-center w-full mx-auto my-2 p-4 space-y-12">
+  <header class="flex flex-col justify-center text-center space-y-2">
+    <h1 class="text-4xl font-bold">Front-end Development</h1>
+    <p class="text-lg">Hello! My name is Miles. I create websites and software to solve problems.</p>
   </header>
 
   <!-- Main Skills -->
-  <section>
+  <section class="grid gap-4 mx-auto">
     {#each $db.mainSkills as item}
-      <div>
-        <h2>{item.title}</h2>
-        <p>{item.desc}</p>
+      <div class="grid grid-flow-col bg-slate-100 p-10 rounded-md max-w-md">
+        <img src={item.img} alt={item.imgAlt} class="w-32" />
+        <div>
+          <h2 class="text-2xl font-bold mb-2">{item.title}</h2>
+          <p>{item.desc}</p>
+        </div>
       </div>
     {/each}
   </section>

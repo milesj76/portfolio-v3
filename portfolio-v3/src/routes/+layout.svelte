@@ -10,8 +10,8 @@
   }
 </script>
 
-<div>
-  <nav class="flex justify-between items-center px-6 py-4">
+<div class="">
+  <nav class="flex justify-between items-center px-4 py-4">
     <div class="flex items-baseline space-x-4">
       <!-- <h1 class="text-3xl font-bold">mB</h1> -->
       <p class="tracking-tighter font-light text-base"><span class="font-bold text-3xl">m</span>iles <span class="font-bold text-3xl">B</span>urke</p>
@@ -54,7 +54,7 @@
     </Sheet.Root>
   </nav>
 
-  <main>
+  <main class="">
     <slot />
   </main>
 
@@ -67,7 +67,8 @@
       Social media links
     </div>
     <div>
-      Created by Miles Burke using Sveltekit
+      <p>Created by Miles Burke using Sveltekit</p>
+      <a href="https://www.flaticon.com/free-icons/technology" title="technology icons">Technology icons created by orvipixel - Flaticon</a>
     </div>
   </footer>
 </div>
