@@ -5,9 +5,9 @@
   import { MenuIcon } from "lucide-svelte";
 	import { goto } from "$app/navigation";
 
-  function navigate(target) {
-    goto(target)
-  }
+  // function navigate(target) {
+  //   goto(target)
+  // }
 </script>
 
 <div class="">

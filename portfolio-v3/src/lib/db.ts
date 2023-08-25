@@ -60,7 +60,26 @@ const dbData = {
   ],
   about: [
     {}
-  ]
+  ],
+  portfolio: {
+    ordered: [],
+    featured: [],
+    jsCalculator: {
+      title: 'Javascript Calculator',
+      quickDesc: 'I made a simple calculator using JS and BigDecimal to get JS to do math correctly.',
+      quickLink: 'url'
+    },
+    reuseTechnicianApp: {
+      title: 'Computer Technician App',
+      quickDesc: 'This was an application built to support technicians at ReuseComputers to organize the inventory and fulfill orders.',
+      quickLink: 'url'
+    },
+    reuseAuditApp: {
+      title: 'Inventory Audit Web App',
+      quickDesc: 'I built a website, API and backend to simplify the inventory audit process at ReuseComputers and provide the ability to use scanners to reduce time to complete an audit.',
+      quickLink: 'url'
+    }
+  }
 }
 
 export const db = readable(dbData)

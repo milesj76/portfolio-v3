@@ -1,4 +1,4 @@
-import { fontFamily } from "tailwindcss/defaultTheme";
+import { fontFamily, screens as defaultScreens } from "tailwindcss/defaultTheme";
 import tailwindcssAnimate from "tailwindcss-animate";
 
 /** @type {import('tailwindcss').Config} */
@@ -10,6 +10,8 @@ const config = {
 			center: true,
 			padding: "2rem",
 			screens: {
+				'xs': "475px",
+				...defaultScreens,
 				"2xl": "1400px"
 			}
 		},
