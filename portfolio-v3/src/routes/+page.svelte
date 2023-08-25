@@ -1,5 +1,8 @@
 <script lang="ts">
   import { db } from '$lib/db'
+  import Button from '$lib/components/ui/button/button.svelte';
+
+  const featuredWork = [$db.portfolio.reuseTechnicianApp, $db.portfolio.reuseAuditApp, $db.portfolio.jsCalculator]
 </script>
 
 <div class="flex flex-col justify-center w-full mx-auto my-2 p-4 space-y-12">
@@ -23,8 +26,18 @@
   <hr>
 
   <!-- Featured Work -->
-  <section>
-    <header><h1>Featured Work</h1></header>
-
+  <section class="space-y-4">
+    <header class="text-4xl text-center font-bold"><h1>Featured Work</h1></header>
+    <div class="space-y-8">
+      {#each featuredWork as project }
+        <article>
+          <!-- ADD IMG FOR EACH PROJECT HERE -->
+          <h2>{project.title}</h2>
+          <p>{project.quickDesc}</p>
+        </article>
+      {/each}
+    </div>
   </section>
+
+  <Button class="w-40 self-center">Get In Touch</Button>
 </div>

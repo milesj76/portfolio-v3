@@ -59,9 +59,9 @@
   </main>
 
   <!-- Footer -->
-  <footer>
+  <footer class="text-center">
     <div>
-      Little description of Miles
+      I'm a developer with two years of professional experience. I build websites, apps and API's to make business better.
     </div>
     <div>
       Social media links
