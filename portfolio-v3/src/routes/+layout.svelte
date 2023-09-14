@@ -10,11 +10,11 @@
   // }
 </script>
 
-<div class="">
+<div class="text-black">
   <nav class="flex justify-between items-center px-4 py-4">
-    <div class="flex items-baseline space-x-4">
+    <div class="flex items-baseline space-x-4" >
       <!-- <h1 class="text-3xl font-bold">mB</h1> -->
-      <p class="tracking-tighter font-light text-base"><span class="font-bold text-3xl">m</span>iles <span class="font-bold text-3xl">B</span>urke</p>
+      <a href="/" class="tracking-tighter font-light text-base"><span class="font-bold text-3xl">m</span>iles <span class="font-bold text-3xl">B</span>urke</a>
     </div>
 
     <!-- Non-Burger Nav -->
@@ -42,7 +42,7 @@
         <form class="flex flex-col space-y-2">
           <Sheet.Close asChild let:builder>
             <a href="/">Home</a>
-            <a href="#">Portfolio</a>
+            <a href="/portfolio">Portfolio</a>
             <a href="/about">About</a>
             <!-- <a href="#">Articles</a> -->
           </Sheet.Close>

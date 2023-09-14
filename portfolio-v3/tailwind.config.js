@@ -1,4 +1,5 @@
 import { fontFamily, screens as defaultScreens } from "tailwindcss/defaultTheme";
+const defaultColors = require('tailwindcss/colors')
 import tailwindcssAnimate from "tailwindcss-animate";
 
 /** @type {import('tailwindcss').Config} */
@@ -9,11 +10,40 @@ const config = {
 		container: {
 			center: true,
 			padding: "2rem",
-			screens: {
-				'xs': "475px",
-				...defaultScreens,
-				"2xl": "1400px"
-			}
+		},
+		colors: {
+			inherit: defaultColors.inherit,
+			current: defaultColors.current,
+			transparent: defaultColors.transparent,
+			black: '#333333',
+			white: defaultColors.white,
+			slate: defaultColors.slate,
+			gray: defaultColors.gray,
+			zinc: defaultColors.zinc,
+			neutral: defaultColors.neutral,
+			stone: defaultColors.stone,
+			red: defaultColors.red,
+			orange: defaultColors.orange,
+			amber: defaultColors.amber,
+			yellow: defaultColors.yellow,
+			lime: defaultColors.lime,
+			green: defaultColors.green,
+			emerald: defaultColors.emerald,
+			teal: defaultColors.teal,
+			cyan: defaultColors.cyan,
+			sky: defaultColors.sky,
+			blue: defaultColors.blue,
+			indigo: defaultColors.indigo,
+			violet: defaultColors.violet,
+			purple: defaultColors.purple,
+			fuchsia: defaultColors.fuchsia,
+			pink: defaultColors.pink,
+			rose: defaultColors.rose,
+		},
+		screens: {
+			"xs": "475px",
+			...defaultScreens,
+			"2xl": "1400px"
 		},
 		extend: {
 			colors: {
@@ -49,7 +79,8 @@ const config = {
 				card: {
 					DEFAULT: "hsl(var(--card))",
 					foreground: "hsl(var(--card-foreground))"
-				}
+				},
+				blklite: '#222222'
 			},
 			borderRadius: {
 				lg: "var(--radius)",
