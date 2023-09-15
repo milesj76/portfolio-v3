@@ -15,8 +15,10 @@
   <section class="grid gap-4 mx-auto">
     {#each $db.mainSkills as item}
       <div class="flex flex-col xs:flex-row bg-slate-100 py-8 px-6 rounded-md max-w-md">
-        <img src={item.img} alt={item.imgAlt} class="w-32 h-32 my-auto mx-auto xs:mx-0 xs:mr-8" />
-        <div class="my-4 xs:my-0">
+        <div class="rounded-md bg-slate-200 w-40 my-auto mx-auto xs:mx-0 xs:mr-8">
+          <img src={item.img} alt={item.imgAlt} class="scale-75" />
+        </div>
+        <div class="my-4 xs:my-0 flex-1 max-w-[280px]">
           <h2 class="text-2xl font-semibold mb-2 text-center xs:text-justify">{item.title}</h2>
           <p>{item.desc}</p>
         </div>
