@@ -6,13 +6,13 @@ import cube from '$lib/img/cube.png'
 const dbData = {
   mainSkills: [
     {
-      title: 'Front-end development',
+      title: 'Front-end Development',
       desc: 'Proficiently architecting and implementing user interfaces with HTML, CSS, and JavaScript for seamless and engaging web experiences.',
       img: computer,
       imgAlt: 'Image signifying computer based work'
     },
     {
-      title: 'Responsive design',
+      title: 'Responsive Design',
       desc: 'Building user interfaces that adapt to every device for a pleasant experience.',
       img: smartphone,
       imgAlt: 'Image representing different devices'

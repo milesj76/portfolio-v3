@@ -10,11 +10,11 @@
   // }
 </script>
 
-<div class="text-black">
+<div class="text-black bg-white-100">
   <nav class="flex justify-between items-center px-4 py-4">
     <div class="flex items-baseline space-x-4" >
       <!-- <h1 class="text-3xl font-bold">mB</h1> -->
-      <a href="/" class="tracking-tighter font-light text-base"><span class="font-bold text-3xl">m</span>iles <span class="font-bold text-3xl">B</span>urke</a>
+      <a href="/" class="tracking-tighter font-light text-base"><span class="font-bold text-3xl text-blue-dark">m</span>iles <span class="font-bold text-3xl text-blue-dark">B</span>urke</a>
     </div>
 
     <!-- Non-Burger Nav -->
@@ -29,7 +29,7 @@
     <Sheet.Root>
       <Sheet.Trigger asChild let:builder>
         <Button builders={[builder]} variant="ghost" size="icon">
-          <MenuIcon class="h-16 w-16" />
+          <MenuIcon class="h-16 w-16 text-blue-dark" />
         </Button>
       </Sheet.Trigger>
       <Sheet.Content side="right">
@@ -59,7 +59,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="text-center">
+  <footer class="text-center bg-black text-white-100">
     <div>
       I'm a developer with two years of professional experience. I build websites, apps and API's to make business better.
     </div>

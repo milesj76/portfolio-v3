@@ -15,8 +15,12 @@ const config = {
 			inherit: defaultColors.inherit,
 			current: defaultColors.current,
 			transparent: defaultColors.transparent,
-			black: '#333333',
-			white: defaultColors.white,
+			black: '#09141f',
+			white: {
+				'100': "#f5f5f4",
+				'200': "#ececea",
+				'300': "#e2e2df",
+			},
 			slate: defaultColors.slate,
 			gray: defaultColors.gray,
 			zinc: defaultColors.zinc,
@@ -27,12 +31,20 @@ const config = {
 			amber: defaultColors.amber,
 			yellow: defaultColors.yellow,
 			lime: defaultColors.lime,
-			green: defaultColors.green,
+			green: {
+				'300': "#65b886",
+				'400': "#57b27c",
+				'500': '#4DA871',
+			},
 			emerald: defaultColors.emerald,
 			teal: defaultColors.teal,
 			cyan: defaultColors.cyan,
 			sky: defaultColors.sky,
-			blue: defaultColors.blue,
+			blue: {
+				dark: "#334870",
+				light: "#778da9",
+				...defaultColors.blue
+			},
 			indigo: defaultColors.indigo,
 			violet: defaultColors.violet,
 			purple: defaultColors.purple,
@@ -80,7 +92,12 @@ const config = {
 					DEFAULT: "hsl(var(--card))",
 					foreground: "hsl(var(--card-foreground))"
 				},
-				blklite: '#222222'
+				blklite: '#222222',
+				theme100: "#09141f",
+				theme200: "#1b263b",
+				theme300: "#778da9",
+				theme400: "#f5f5f4",
+				theme500: "#4da871",
 			},
 			borderRadius: {
 				lg: "var(--radius)",
