@@ -59,7 +59,8 @@
   </main>
 
   <!-- Footer -->
-  <footer class="text-center bg-black text-white-100">
+  <div class="py-1.5 bg-blue-dark" />
+  <footer class="py-6 px-4 space-y-4 text-center bg-black text-white-100 border-blue-dark">
     <div>
       I'm a developer with two years of professional experience. I build websites, apps and API's to make business better.
     </div>
@@ -72,3 +73,7 @@
     </div>
   </footer>
 </div>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+</style>

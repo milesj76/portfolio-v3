@@ -57,6 +57,9 @@ const config = {
 			...defaultScreens,
 			"2xl": "1400px"
 		},
+		fontFamily: {
+			'sans': ['Raleway']
+		},
 		extend: {
 			colors: {
 				border: "hsl(var(--border))",
