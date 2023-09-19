@@ -3,6 +3,11 @@ import computer from '$lib/img/computer-science.png'
 import smartphone from '$lib/img/smartphone.png'
 import cube from '$lib/img/cube.png'
 
+// project cover imgs
+import techAppCoverImg from '$lib/img/tech-app/techAppCoverImg.png'
+import auditCoverImg from '$lib/img/audit-app/auditCoverImg.png'
+import calculatorCoverImg from '$lib/img/calculator-thumb.png'
+
 const dbData = {
   mainSkills: [
     {
@@ -67,17 +72,20 @@ const dbData = {
     jsCalculator: {
       title: 'Javascript Calculator',
       quickDesc: 'I made a simple calculator using JS and BigDecimal to get JS to do math correctly.',
-      quickLink: 'url'
+      quickLink: 'url',
+      coverImg: calculatorCoverImg
     },
     reuseTechnicianApp: {
       title: 'Computer Technician App',
       quickDesc: 'This was an application built to support technicians at ReuseComputers to organize the inventory and fulfill orders.',
-      quickLink: 'url'
+      quickLink: 'url',
+      coverImg: techAppCoverImg
     },
     reuseAuditApp: {
       title: 'Inventory Audit Web App',
       quickDesc: 'I built a website, API and backend to simplify the inventory audit process at ReuseComputers and provide the ability to use scanners to reduce time to complete an audit.',
-      quickLink: 'url'
+      quickLink: 'url',
+      coverImg: auditCoverImg
     }
   }
 }
