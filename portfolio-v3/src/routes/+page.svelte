@@ -14,7 +14,7 @@
   <!-- Main Skills -->
   <section class="grid gap-4 mx-auto">
     {#each $db.mainSkills as item}
-      <div class="flex flex-col xs:flex-row bg-white-200 py-8 px-6 rounded-md max-w-lg shadow-md">
+      <div class="flex flex-col xs:flex-row bg-white-200 py-8 px-6 rounded-md max-w-lg shadow-sm">
         <div class="rounded-md bg-blue-dark w-40 my-auto mx-auto xs:mx-0 xs:mr-8">
           <img src={item.img} alt={item.imgAlt} class="scale-75 invert" />
         </div>
@@ -30,18 +30,22 @@
   <!-- Featured Work -->
   <section class="space-y-4">
     <header class="pb-6 text-4xl text-center font-bold"><h1>Featured Work</h1></header>
-    <div class="flex flex-col items-center space-y-8">
+    <div class="flex flex-col items-center space-y-12">
       {#each featuredWork as project }
-        <article class="max-w-lg">
-          <!-- ADD IMG FOR EACH PROJECT HERE -->
-          <a href="#" class="text-xl font-semibold text-primary">{project.title}</a>
+        <article class="flex flex-col gap-3 max-w-lg">
+          <!-- svelte-ignore a11y-img-redundant-alt -->
+          <img src={project.coverImg} alt="cover image" />
+          <a href="#" class="text-2xl font-semibold text-blue-dark hover:text-blue-light transition">
+            <span>></span>
+            {project.title}
+          </a>
           <p>{project.quickDesc}</p>
         </article>
       {/each}
     </div>
   </section>
 
-  <Button class="w-40 self-center">Get In Touch</Button>
+  <Button class="w-40 self-center bg-green-500 hover:bg-green-300">Get In Touch</Button>
 </div>
 
 <style>
