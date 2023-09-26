@@ -78,7 +78,7 @@ const dbData = {
     reuseTechnicianApp: {
       title: 'Computer Technician App',
       quickDesc: 'This was an application built to support technicians at ReuseComputers to organize the inventory and fulfill orders.',
-      quickLink: 'url',
+      quickLink: 'reuse-tech-app',
       coverImg: techAppCoverImg
     },
     reuseAuditApp: {

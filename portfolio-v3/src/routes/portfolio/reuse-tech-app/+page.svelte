@@ -4,7 +4,7 @@
     export let data: PageData;
 </script>
 
-<div>
+<div class="space-y-8">
     <!-- Title -->
     <header>ReUse Computers Technician App</header>
 
@@ -61,7 +61,16 @@
     <article>
         <h2>Handling The Shipping Process</h2>
 
-        <p></p>
+        <p>As I started thinking about the basic CRUD functions needed to use the inventory, it occurred to me that I needed to address adding and removing computers from the inventory. What I decided to do was to create a Receiving queue. Previously, every computer that would be added directly to the inventory and had a shipping status. The inventory needed to stay accurate and lean so we weren't wading through useless data so it made more sense to separate data by their "state" in our process. The added benefit of having this Receiving queue was that we could get a snapshot of what we received and archive it for future reference. This has been instrumental in helping us solve inventory and returns issues as time has gone on.</p>
+
+        <p>This Receiving queue I also designed to pre-assign each incoming computer a unique ID. My boss had already picked a tag system that would scale infinitely (i.e. 1000A, 1000B, 1000C...) so I used JavaScript to create scripts to generate new IDs and assign them. At the time of check in, a person would have to verify some information on the computer before it would be added into the inventory. This would not only move the computer's data into the inventory but would also record the state and time of check in and add it to the Receiving Archive. AppSheet has some weaknesses though and has trouble dealing with special instances of user input. I threw together a quick sort of form in another Google Sheet so that we could easily add any number of computers that we'd purchased and all of their purchase/computer details. This also required some back side JavaScript but has made the whole process of adding new computers much, much simpler. I originally wanted to make a website form instead but it was taking too much time to figure out how to connect such a thing to Google's services securely.</p>
+
+        <p>As for the outgoing items, we already had a shipping manifest Sheet made that was connected to a Google Form. Luckily, that integrated very easily into the application and worked very similarly to the way it had originally. We've since made upgrades to it and can now scan and auto-fill in the majority of the needed data. This all has made it possible to allow many people to get involved in these processes while still maintaining data standards and logging historical data.</p>
     </article>
 
+    <article>
+        <h2>Integrating Orders</h2>
+
+        <p>Originally, I had only intended to create a highly accurate inventory with an extremely smooth and intuitive experience. As the app progressed towards completion, we techs had the idea to also use the app to simplify working on our orders. This would mean incorporating another Sheet and also virtualizing our order "check list" to provide verification of certain parts of our work. With this, we could automate many manual actions (writing our progress, noting order peripherals to be shipped, etc.) and, in turn, make us more efficient at our work.</p>
+    </article>
 </div>

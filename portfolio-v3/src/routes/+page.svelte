@@ -35,7 +35,7 @@
         <article class="flex flex-col gap-3 max-w-lg">
           <!-- svelte-ignore a11y-img-redundant-alt -->
           <img src={project.coverImg} alt="cover image" />
-          <a href="#" class="text-2xl font-semibold text-blue-dark hover:text-blue-light transition">
+          <a href={`portfolio/${project.quickLink}`} class="text-2xl font-semibold text-blue-dark hover:text-blue-light transition">
             <span>></span>
             {project.title}
           </a>
