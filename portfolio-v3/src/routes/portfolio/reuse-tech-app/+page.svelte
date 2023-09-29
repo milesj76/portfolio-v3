@@ -6,7 +6,7 @@
 
 <div class="space-y-8">
     <!-- Title -->
-    <header>ReUse Computers Technician App</header>
+    <header class="text-4xl font-bold">ReUse Computers Technician App</header>
 
     <!-- Quick Description -->
     <article>
@@ -101,6 +101,8 @@
     <article>
         <h2>The Working Product</h2>
         
-        <p></p>
+        <p>After four or five weeks, I had deployed the app and converted our systems over to our new Google Sheets. In full, the app now provided a more inuitive interface and way to interact with our data. All of the main areas of our production were handled, receiving computers and parts, the inventory of computers, the orders to be fulfilled and outgoing shipments. What was able to be handled by AppSheet I had made actions and what couldn't be handled by AppSheet I wrote scripts with JavaScript.</p>
+
+        <p>Since then, we made other improvements to help keep track of different types of issues pertinent to the business. This app made a significant impact on how work was done at ReUse and has since been a central part of getting work done. I have a hard time believing we actually worked without the app. The inventory became highly accurate giving us insight into its quality and what parts we hard available. Finding a computer is extremely simple and shelf space is always easy to maximize.</p>
     </article>
 </div>
