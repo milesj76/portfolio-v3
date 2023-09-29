@@ -4,13 +4,13 @@
     export let data: PageData;
 </script>
 
-<div class="space-y-8">
+<div class="flex flex-col justify-center w-full mx-auto my-2 p-4 max-w-3xl space-y-8">
     <!-- Title -->
     <header class="text-4xl font-bold">ReUse Computers Technician App</header>
 
     <!-- Quick Description -->
     <article>
-        <p>I was the main developer of the ReUse Technician App and tried to use modern tools to very rapidly build an app that would use many of the same tools we had been using previously. This app was built in 2022 to facilitate the needs of the technicians at the small business I worked for, ReUse Computers. It was built to more efficiently handle the processes of handling incoming (and outgoing) shipments, inventory and work queues. It was built using a blend of Google Sheets, Google AppSheet and Google Apps Script (JavaScript). We saw a dramatic increase in productivity and organization and has since become a primary tool for every technician at ReUse Computers. It was built in about a month and it has continued to be updated and improved.</p>
+        <p>I was the main developer of the ReUse Technician App and used modern tools to very rapidly build an app that would use many of the same tools we had been using previously. This app was built in 2022 to facilitate the needs of the technicians at the small business I worked for, ReUse Computers. It was built to more efficiently handle the processes of handling incoming (and outgoing) shipments, inventory and work queues. It was built using a blend of Google Sheets, Google AppSheet and Google Apps Script (JavaScript). We saw a dramatic increase in productivity and organization and has since become a primary tool for every technician at ReUse Computers. It was built in about a month and it has continued to be updated and improved.</p>
     </article>
     
     <!-- Cover Image -->
@@ -105,4 +105,22 @@
 
         <p>Since then, we made other improvements to help keep track of different types of issues pertinent to the business. This app made a significant impact on how work was done at ReUse and has since been a central part of getting work done. I have a hard time believing we actually worked without the app. The inventory became highly accurate giving us insight into its quality and what parts we hard available. Finding a computer is extremely simple and shelf space is always easy to maximize.</p>
     </article>
+
+    <!-- Call to action at bottom -->
+    
 </div>
+
+<style>
+    article {
+        @apply space-y-6;
+    }
+
+    article > h2 {
+        @apply text-2xl font-semibold;
+    }
+
+    article > p {
+        /* @apply font-serif; */
+        @apply tracking-wide leading-relaxed;
+    }
+</style>
