@@ -104,6 +104,8 @@
         <p>After four or five weeks, I had deployed the app and converted our systems over to our new Google Sheets. In full, the app now provided a more inuitive interface and way to interact with our data. All of the main areas of our production were handled, receiving computers and parts, the inventory of computers, the orders to be fulfilled and outgoing shipments. What was able to be handled by AppSheet I had made actions and what couldn't be handled by AppSheet I wrote scripts with JavaScript.</p>
 
         <p>Since then, we made other improvements to help keep track of different types of issues pertinent to the business. This app made a significant impact on how work was done at ReUse and has since been a central part of getting work done. I have a hard time believing we actually worked without the app. The inventory became highly accurate giving us insight into its quality and what parts we hard available. Finding a computer is extremely simple and shelf space is always easy to maximize.</p>
+
+        <p>What I loved most about this project was that it was the first time I was making a tool that would be utilized by other people. Knowing that it was going to be used everyday really forced me to think through what was most important that I really nail and handle with tech. The tight time constraints really helped me as well in making decisions and forgoing certain ideas for the program. I ended up really enjoying the scrappy nature of the app because despite its simplicity, it made an enormous difference in how work was done afterwards. It's what learning to program was always about for me and it was so cool to get to enjoy the fruits of my work for myself.</p>
     </article>
 
     <!-- Call to action at bottom -->
