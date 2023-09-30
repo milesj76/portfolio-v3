@@ -1,10 +1,10 @@
 <script lang="ts">
     import type { PageData } from './$types';
     
-    export let data: PageData;
+    // export let data: PageData;
 </script>
 
-<div class="flex flex-col justify-center w-full mx-auto my-2 p-4 max-w-3xl space-y-8">
+<div class="flex flex-col justify-center w-full mx-auto my-6 p-4 max-w-3xl space-y-8">
     <!-- Title -->
     <header class="text-4xl font-bold">ReUse Computers Technician App</header>
 
@@ -18,9 +18,9 @@
     <!-- Quick Link to images -->
 
     <!-- Responsibilities -->
-    <section>
-        <h4>Responsibilities</h4>
-        <ul>
+    <section class="special-box">
+        <h4 class="text-lg font-semibold mb-2">Responsibilities</h4>
+        <ul class="w-full grid grid-cols-3 grid-flow-row list-disc px-4">
             <li>JavaScript</li>
             <li>Google Sheets API</li>
             <li>AppSheet</li>
@@ -107,7 +107,7 @@
     </article>
 
     <!-- Call to action at bottom -->
-    
+
 </div>
 
 <style>
@@ -122,5 +122,9 @@
     article > p {
         /* @apply font-serif; */
         @apply tracking-wide leading-relaxed;
+    }
+
+    .special-box {
+        @apply bg-white-200 py-4 px-8 rounded-md shadow-sm;
     }
 </style>
