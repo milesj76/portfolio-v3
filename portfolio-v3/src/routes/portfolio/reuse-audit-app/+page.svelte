@@ -52,14 +52,47 @@
     </article>
 
     <!-- The Audit Process -->
+    <article>
+        <h2>The Audit Flow</h2>
 
-    <!-- Front End -->
+        <p>In general, the audit would consist of entering and scanning every computer in our inventory and compare our input to what the inventory claimed to say. It seemed important that this tool be made once and be used for as long as possible so I aimed to design it to be relatively quick to use but also to be completed over at least a week of time. We might have thousands of computers in inventory at once so one can't be sure of how long an audit might take.</p>
+
+        <p>First a user would need to initiate an audit. Then, the user would scan a location and every computer in that location. After scanning everything, the user would initiate the reconciliation process. In reconciliation, the app would show the user discrepancies between what's been scanned and what hasn't. After reconciling the inventory, the user can complete the audit which saves a copy of every computer that was left missing. At audit completion, the program updates the active inventory with everything that was found and accounted for and removes everything that wasn't.</p>
+    </article>
+
+    <!-- Front End and Scanning-->
+    <article>
+        <h2>The Front End</h2>
+
+        <p>My main goal was to find a way to use our barcode scanners for the majority of this process. After fiddling with some JavaScript, I found I could adjust some of the "key" events to prevent submitting or shifting focus from input fields. Knowing this, I knew I'd have to deploy a web app of some kind so I decided I'd build the site with my favorite web framework, Sveltekit. Sveltekit felt like a great choice because its syntax is very simple, makes MPAs simple to build and is one framework I'm most familiar with. I didn't want to spend too much time if I could avoid it.</p>
+
+        <p>I used tailwindcss and DaisyUI for styling the site. I liked that DaisyUI had some basic themes and different styled components I could use right off the get go and this seemed like a good opportunity to try using it on a project. I've been pretty happy using tailwind for the last year now because I find styling a much faster process with it. Now, this wasn't going to be anything incredible, more functional than anything. I did want to make sure I used styles to help emphasize certain data and certain actions that the user could take. While beauty in the page is important, what was more important to me was making information on the screen clear.</p>
+    </article>
 
     <!-- API -->
+    <article>
+        <h2>API From Scratch</h2>
+
+        <p>I'd never really built an API until this project and what's more was that I wasn't connecting it to a proper database. This was only a series of Google Sheets so I used whatever tools would simplify interacting with Sheets. The result was an API built from scratch using Google Apps Script and their connected Sheets and Drive API's. It's hardly the way I wanted to make it but it's what seemed the most straightforward.</p>
+
+        <p>Before I even began making endpoints, I started by constructing Sheets and functions to initiate an audit, save the state of the audit, log actions taken during the audit (especially for debugging), and copy the Inventory. After getting some of the foundation built, I plotted out each step of the audit process and built the entire process step by step.</p>
+    </article>
 
     <!-- Version Control and clasp-->
+    <article>
+        <h2>Version Control and "clasp"</h2>
+
+        <p>I knew that I'd have to write a ton of code for this process and I figured that I'd be bound to make some mistakes that would need patched later on. This was actually a little complicated because part of my code would rest in Google Apps Script. Luckily, I found the tool "clasp" which is a command line tool specifically made for my use case, building Apps Script projects in my local environment. This allowed me not only to push all my code easily into GitHub, but it also gave me an easy way to deploy new versions of my API after making updates.</p>
+
+        <p>The result was a few scripts that I made to simplify updating my dev API with new code that I could instantly test in my dev environment. This also required me to create a dev environment that had unique settings separate from my production environment. Due to this having to interact with our actual inventory, it was important to handle my testing on a mock inventory before using the code on the real thing. It took a little bit of setup but ultimately was a fairly simple thing to build.</p>
+    </article>
 
     <!-- Testing with Insomnia -->
+    <article>
+        <h2>Testing and Insomnia</h2>
+
+        <p></p>
+    </article>
 
     <!-- Deploying using Node.js -->
 
