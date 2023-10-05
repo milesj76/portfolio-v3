@@ -1,4 +1,6 @@
 <script lang="ts">
+    import { db } from "$lib/db";
+    import postOptions from "$lib/img/audit-app/postOptions.png"
     // import type { PageData } from './$types';
     
     // export let data: PageData;
@@ -14,6 +16,9 @@
     </article>
     
     <!-- Cover Image -->
+    <section class="special-box">
+        <img src={$db.portfolio.reuseAuditApp.coverImg} alt="ReUse Audit App Dashboard">
+    </section>
 
     <!-- Quick Link to images -->
 
@@ -59,6 +64,11 @@
 
         <p>First a user would need to initiate an audit. Then, the user would scan a location and every computer in that location. After scanning everything, the user would initiate the reconciliation process. In reconciliation, the app would show the user discrepancies between what's been scanned and what hasn't. After reconciling the inventory, the user can complete the audit which saves a copy of every computer that was left missing. At audit completion, the program updates the active inventory with everything that was found and accounted for and removes everything that wasn't.</p>
     </article>
+
+    <section class="special-box space-y-8 text-center">
+        <img src={postOptions} alt="List of optional requests to the API">
+        <p>List of API requests for major app functions.</p>
+    </section>
 
     <!-- Front End and Scanning-->
     <article>
@@ -133,6 +143,6 @@
     }
 
     .special-box {
-        @apply bg-white-200 py-4 px-8 rounded-md shadow-sm;
+        @apply bg-white-200 p-8 rounded-md shadow-sm;
     }
 </style>
