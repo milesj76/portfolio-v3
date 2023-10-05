@@ -91,19 +91,26 @@
     <article>
         <h2>Testing and Insomnia</h2>
 
-        <p></p>
+        <p>I had to do a bit of custom testing since Google Apps Script was my API. There is no formal testing library from Google and I doubted anyone would do much more to this app after me so I decided to forgo automated tests. Most of my tests were fairly small and simple to verify my outputs. For my endpoints, I used Insomnia to test my requests and responses. I actually really enjoyed it especially compared to Postman, it felt simpler and cleaner in comparison.</p>
+
+        <p>For much of my code, consistent small tests helped me write code in logical chunks. It was noticeable how I began to shift my code into logical, data manipulations and procedures. It definitely cleaned up my code, even driving me to use some class style code to group certain areas of code into a class, but instead trying to use JavaScript's prototypes. In this project, I had to house my code in classes/objects due to Google App Script exposing every file into the global scope.</p>
     </article>
 
     <!-- Deploying using Node.js -->
+    <article>
+        <h2>Deploying With Node</h2>
+
+        <p>Because we're a used computer company, I figured we could just host the site on our own. We wouldn't be doing audits every hour and I also didn't want to leave our audit tool potentially open to the internet. I decided to deploy the site using Node.js on a spare computer we had with a quick way to spin it up and shut it down. We opened a local network port specifically for it and now turn the site on whenver it's time to audit. Another great experience for me because I've never really had the chance to deploy a local site before. I can see how the complexity would encourage most devs to using our many online deployment services. Lucky for me, Sveltekit has a fairly easy to use adapter system for deploying to different platforms.</p>
+        
+        <p>It also really paid off to have setup environment specific settings for this stage. With a few variable changes, my site and API were setup for production.</p>
+    </article>
 
     <article>
-        <h2>Understanding The System</h2>
+        <h2>Project Takeaways</h2>
 
-        <p>In the process of creating this app, I realized I had to understand how the current system was organized and divided. This would guide me to how I would connect our current data structures together with code. I want to emphasize this part of the project because I found this to be an extremely helpful learning experience. At this point, I hadn't really had the opportunity to work on existing structures and not on such a large and systematic scale. Seeing and organizing the project from macro and micro levels really taught me how to think about code and data structures as a system, how parts of the system interact and what a system requires to start and maintain operation.</p>
+        <p>I think the major takeaways were all aspects that paid off over the long term. I realized that the beginnings to a project are incredibly time consuming, laying out the structure and fundamental pieces of code. But I also learned that if you think through your needs early on, it becomes much, much easier to work later on by several orders of magnitude. In fact, a month after deployment, I added an extra feature to "quick audit" some individual locations. I was surprised at how easy it was to add this feature because I was able to branch off of the master and switch back into dev mode, diving right back into the code. All of my links were housed in one ordered place and by simply switching one variable, all dependant functions were making requests to the correct paths.</p>
 
-        <p>I've since taken this lesson into every project I've worked on since and it has dramatically improved my work on projects, especially those projects of higher complexity. This app will probably always have a special place in my memory.</p>
-
-        <!-- Add image of the system blueprint I made -->
+        <p>I also plotted a path to a reasonable Minimum Viable Product. There's never enough time to finish something so I tried my best to lay out the most important functions of the app. While the site itself didn't look the greatest, it handled all the basic use cases that I required and it was deployed within a month. I had the vast majority of what was needed built and set myself up to make improvements later on. In the case of this project, I didn't do much enhancement afterwards besides a few bug fixes and an added feature but I know I'm set to jump into this project at any point in the future to make improvements. This has been a crucial lesson in helping me charge forward into a first working version that I can build on. It builds momentum and is the real heart of software development.</p>
     </article>
 
 
