@@ -1,6 +1,8 @@
 <script lang="ts">
     import { db } from "$lib/db";
     import postOptions from "$lib/img/audit-app/postOptions.png"
+    import svelteExample from "$lib/img/audit-app/svelteExample.png"
+    import connectExample from "$lib/img/audit-app/connectExample.png"
     // import type { PageData } from './$types';
     
     // export let data: PageData;
@@ -79,13 +81,18 @@
         <p>I used tailwindcss and DaisyUI for styling the site. I liked that DaisyUI had some basic themes and different styled components I could use right off the get go and this seemed like a good opportunity to try using it on a project. I've been pretty happy using tailwind for the last year now because I find styling a much faster process with it. Now, this wasn't going to be anything incredible, more functional than anything. I did want to make sure I used styles to help emphasize certain data and certain actions that the user could take. While beauty in the page is important, what was more important to me was making information on the screen clear.</p>
     </article>
 
+    <section class="special-box space-y-8 text-center">
+        <img src={svelteExample} alt="Example of back end svelte code">
+        <p>Sveltekit simplified setting up requests to the API on the front end.</p>
+    </section>
+
     <!-- API -->
     <article>
         <h2>API From Scratch</h2>
 
         <p>I'd never really built an API until this project and what's more was that I wasn't connecting it to a proper database. This was only a series of Google Sheets so I used whatever tools would simplify interacting with Sheets. The result was an API built from scratch using Google Apps Script and their connected Sheets and Drive API's. It's hardly the way I wanted to make it but it's what seemed the most straightforward.</p>
 
-        <p>Before I even began making endpoints, I started by constructing Sheets and functions to initiate an audit, save the state of the audit, log actions taken during the audit (especially for debugging), and copy the Inventory. After getting some of the foundation built, I plotted out each step of the audit process and built the entire process step by step.</p>
+        <p>Before I even began making endpoints and special queries, I started by constructing Sheets and functions to initiate an audit, save the state of the audit, log actions taken during the audit (especially for debugging), and copy the Inventory. After getting some of the foundation built, I plotted out each step of the audit process and built it step by step.</p>
     </article>
 
     <!-- Version Control and clasp-->
@@ -114,6 +121,11 @@
         
         <p>It also really paid off to have setup environment specific settings for this stage. With a few variable changes, my site and API were setup for production.</p>
     </article>
+
+    <section class="special-box space-y-8 text-center">
+        <img src={connectExample} alt="Sheet connecting function example">
+        <p>With this function, going between dev and producting environments was extremely simple.</p>
+    </section>
 
     <article>
         <h2>Project Takeaways</h2>
