@@ -4,7 +4,7 @@
     // export let data: PageData;
 </script>
 
-<div class="flex flex-col justify-center w-full mx-auto my-6 p-4 max-w-3xl space-y-8">
+<div class="flex flex-col justify-center w-full mx-auto my-6 p-4 max-w-3xl 2xl:max-w-[80rem] space-y-8">
     <!-- Title -->
     <header class="text-4xl font-bold">ReUse Computers Technician App</header>
 
