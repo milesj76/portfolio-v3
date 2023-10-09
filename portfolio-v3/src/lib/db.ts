@@ -84,13 +84,13 @@ const dbData = {
     reuseAuditApp: {
       title: 'Inventory Audit Web App',
       quickDesc: 'I built a website, API and backend to simplify the inventory audit process at ReuseComputers and provide the ability to use scanners to reduce time to complete an audit.',
-      quickLink: 'url',
+      quickLink: 'reuse-audit-app',
       coverImg: auditCoverImg
     },
     canadaShipmentTool: {
       title: 'Canada Shipment Tool',
       quickDesc: "A browser extension that I built to simplify the process of creating a shipment from the United States to Canada.",
-      quickLink: 'url',
+      quickLink: '#',
       coverImg: null
     }
   }
