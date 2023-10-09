@@ -1,5 +1,9 @@
 <script lang="ts">
     import type { PageData } from './$types';
+    import { db } from '$lib/db';
+    import orderList from '$lib/img/tech-app/orderList.png'
+    import inventoryDetail from '$lib/img/tech-app/inventoryDetail.png'
+    import receivingScript from '$lib/img/tech-app/receivingScript.png'
     
     // export let data: PageData;
 </script>
@@ -14,6 +18,9 @@
     </article>
     
     <!-- Cover Image -->
+    <section class="special-box">
+        <img src={$db.portfolio.reuseTechnicianApp.coverImg} alt="ReUse Technician App Dashboard">
+    </section>
 
     <!-- Quick Link to images -->
 
@@ -68,6 +75,11 @@
         <p>AppSheet had most of these features built into it and seemed to be primarily what it was made for. I immediately duplicated our inventory Sheet and began building off of it to start the app.</p>
     </article>
 
+    <section class="special-box space-y-8 text-center">
+        <img src={inventoryDetail} alt="Iventory item details">
+        <p>An computer in inventory and it's details.</p>
+    </section>
+
     <article>
         <h2>Handling The Shipping Process</h2>
 
@@ -78,6 +90,11 @@
         <p>As for the outgoing items, we already had a shipping manifest Sheet made that was connected to a Google Form. Luckily, that integrated very easily into the application and worked very similarly to the way it had originally. We've since made upgrades to it and can now scan and auto-fill in the majority of the needed data. This all has made it possible to allow many people to get involved in these processes while still maintaining data standards and logging historical data.</p>
     </article>
 
+    <section class="special-box space-y-8 text-center">
+        <img src={receivingScript} alt="Some code that handles data in the receiving process.">
+        <p>Some example of code that handles data in the receiving process.</p>
+    </section>
+
     <article>
         <h2>Integrating Orders</h2>
 
@@ -87,6 +104,11 @@
 
         <p>On top of this, once it was time to ship the order, we had every order detail to be sure we weren't missing anything and, with a click, add the shipment to our outgoing manifest. The process from start to finish became simpler, less manual and more accurate. All of the main parts of the refurbishing process integrated together to make a vastly simpler experience.</p>
     </article>
+
+    <section class="special-box space-y-8 text-center">
+        <img src={orderList} alt="List of computer orders">
+        <p>The list of orders that need to be fulfilled by the techs.</p>
+    </section>
 
     <article>
         <h2>Logistical Upgrades</h2>
@@ -127,6 +149,6 @@
     }
 
     .special-box {
-        @apply bg-white-200 py-4 px-8 rounded-md shadow-sm;
+        @apply bg-white-200 p-8 rounded-md shadow-sm;
     }
 </style>
