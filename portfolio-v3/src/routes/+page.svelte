@@ -2,7 +2,7 @@
   import { db } from '$lib/db'
   import Button from '$lib/components/ui/button/button.svelte';
 
-  const featuredWork = [$db.portfolio.reuseTechnicianApp, $db.portfolio.reuseAuditApp, $db.portfolio.jsCalculator]
+  const featuredWork = [$db.portfolio.reuseTechnicianApp, $db.portfolio.reuseAuditApp]
 </script>
 
 <div class="flex flex-col justify-center w-full mx-auto my-2 p-4 space-y-12">
