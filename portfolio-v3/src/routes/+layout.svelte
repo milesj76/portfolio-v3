@@ -4,6 +4,8 @@
   import { Button } from "$lib/components/ui/button";
   import { MenuIcon } from "lucide-svelte";
 	import { goto } from "$app/navigation";
+  
+  import { GithubIcon } from "lucide-svelte";
 
   // function navigate(target) {
   //   goto(target)
@@ -35,8 +37,10 @@
       <Sheet.Content side="right">
         <Sheet.Header>
           <!-- <Sheet.Title>Miles Burke</Sheet.Title> -->
-          <Sheet.Description>
-            Add Social Media Links here
+          <Sheet.Description class="my-4">
+            <a href="https://www.github.com/milesj76" target="_blank" class="w-10 hover:text-blue-light">
+              <GithubIcon />
+            </a>
           </Sheet.Description>
         </Sheet.Header>
         <form class="flex flex-col space-y-2">
@@ -64,8 +68,10 @@
     <div>
       I'm a developer with two years of professional experience. I build websites, apps and API's to make business better.
     </div>
-    <div>
-      Social media links
+    <div class="flex justify-center">
+      <a href="https://www.github.com/milesj76" target="_blank" class="w-10 hover:text-green-400 duration-75">
+        <GithubIcon />
+      </a>
     </div>
     <div>
       <p>Created by Miles Burke using Sveltekit</p>
