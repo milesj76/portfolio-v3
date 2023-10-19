@@ -46,7 +46,7 @@
         <form class="flex flex-col space-y-2">
           <Sheet.Close asChild let:builder>
             <a href="/">Home</a>
-            <a href="/portfolio">Portfolio</a>
+            <!-- <a href="/portfolio">Portfolio</a> -->
             <a href="/about">About</a>
             <!-- <a href="#">Articles</a> -->
           </Sheet.Close>

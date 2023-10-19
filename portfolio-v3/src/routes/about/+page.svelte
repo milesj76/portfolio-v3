@@ -25,16 +25,16 @@
       @apply space-y-6;
   }
 
-  article > h2 {
+  /* article > h2 {
       @apply text-2xl font-semibold;
-  }
+  } */
 
   article > p {
       /* @apply font-serif; */
       @apply tracking-wide leading-relaxed;
   }
 
-  .special-box {
+  /* .special-box {
       @apply bg-white-200 p-8 rounded-md shadow-sm;
-  }
+  } */
 </style>
