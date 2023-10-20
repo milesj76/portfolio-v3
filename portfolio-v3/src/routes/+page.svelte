@@ -45,7 +45,7 @@
     </div>
   </section>
 
-  <Button class="w-40 self-center bg-green-500 hover:bg-green-300">Get In Touch</Button>
+  <!-- <Button class="w-40 self-center bg-green-500 hover:bg-green-300">Get In Touch</Button> -->
 </div>
 
 <style>

@@ -63,7 +63,7 @@
   </main>
 
   <!-- Footer -->
-  <div class="py-1.5 bg-blue-dark" />
+  <div class="mt-8 py-1.5 bg-blue-dark" />
   <footer class="py-6 px-4 space-y-4 text-center bg-black text-white-100 border-blue-dark">
     <div>
       I'm a developer with two years of professional experience. I build websites, apps and API's to make business better.
