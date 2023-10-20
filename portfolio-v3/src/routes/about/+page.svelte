@@ -15,7 +15,7 @@
   </article>
 
   <article>
-    <p>It has been an endless challenge as a self-taught developer over the past three or four years to learn to develop software. What I've been most eager about lately is collaborating on larger projects with developers of a higher level. I'm certainly proud that I've managed to break through the frustrations of getting stuck on projects by myself. What I want to grow myself further is to see more of how others work and how I can better improve at building things that are easier to maintain over time.</p>
+    <p>It has been an endless challenge as a self-taught developer over the past three or four years to learn to develop software. What I've been most eager about lately is collaborating on larger projects with developers of a higher level. I'm certainly proud that I've managed to break through the frustrations of getting stuck on projects by myself. What I want to grow myself further is to see more of how others work and how I can better improve at building things that are easier to maintain over time. Let's work on something big and make some impact!</p>
   </article>
 </div>
 
