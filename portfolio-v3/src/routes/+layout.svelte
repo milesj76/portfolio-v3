@@ -12,8 +12,8 @@
   // }
 </script>
 
-<div class="text-black bg-white-100">
-  <nav class="flex justify-between items-center px-4 py-4">
+<div class="text-black bg-white-100 grid grid-cols-1 min-h-screen">
+  <nav class="flex justify-between items-center px-4 h-20">
     <div class="flex items-baseline space-x-4" >
       <!-- <h1 class="text-3xl font-bold">mB</h1> -->
       <a href="/" class="tracking-tighter font-light text-base"><span class="font-bold text-3xl text-blue-dark">m</span>iles <span class="font-bold text-3xl text-blue-dark">B</span>urke</a>
