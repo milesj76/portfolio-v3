@@ -1,3 +1,7 @@
+<script>
+  import miles_headshot_crop2 from '$lib/img/miles_headshot_crop2.jpg'
+</script>
+
 <div class="flex flex-col justify-center w-full mx-auto my-6 p-4 max-w-3xl 2xl:max-w-[80rem] space-y-8">
   <!-- Title -->
   <header class="text-4xl font-bold text-center">About Miles Burke</header>
@@ -5,9 +9,10 @@
   <article>
     <p>I am a developer with 2 years of professional experience. I build websites, apps and API's to make business better.</p>
   </article>
-
-  <article>
+  
+  <article class="flex items-center gap-6">
     <p>Most of my experience is in developing web technologies, front-end and back-end. My goal is always to build something that works well and fulfills business needs effectively. While solving code type problems is my main interest, I also enjoy trying to improve how end users will see and use my work. It's great to not only have strong programmatic solutions but to have an organized and understandable presentation that helps guide the user. It's been quite fun to learn about the many problems that need to be solved when creating all kinds of tech.</p>
+    <img src={miles_headshot_crop2} alt="Headshot of Miles" class="w-60 h-min rounded-full">
   </article>
 
   <article>

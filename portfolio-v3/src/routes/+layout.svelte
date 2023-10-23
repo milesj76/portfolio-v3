@@ -16,7 +16,7 @@
   <nav class="flex justify-between items-center px-4 h-20">
     <div class="flex items-baseline space-x-4" >
       <!-- <h1 class="text-3xl font-bold">mB</h1> -->
-      <a href="/" class="tracking-tighter font-light text-base"><span class="font-bold text-3xl text-blue-dark">m</span>iles <span class="font-bold text-3xl text-blue-dark">B</span>urke</a>
+      <a href="/" class="tracking-tighter font-light text-base top-logo"><span class="font-bold text-3xl text-blue-dark">m</span>iles <span class="font-bold text-3xl text-blue-dark">B</span>urke</a>
     </div>
 
     <!-- Non-Burger Nav -->
@@ -31,14 +31,14 @@
     <Sheet.Root>
       <Sheet.Trigger asChild let:builder>
         <Button builders={[builder]} variant="ghost" size="icon">
-          <MenuIcon class="h-16 w-16 text-blue-dark" />
+          <MenuIcon class="h-16 w-16 text-blue-dark hover:text-green-300 duration-75" />
         </Button>
       </Sheet.Trigger>
       <Sheet.Content side="right">
         <Sheet.Header>
           <!-- <Sheet.Title>Miles Burke</Sheet.Title> -->
-          <Sheet.Description class="my-4">
-            <a href="https://www.github.com/milesj76" target="_blank" class="w-10 hover:text-blue-light">
+          <Sheet.Description class="my-4 duration-75">
+            <a href="https://www.github.com/milesj76" target="_blank" class="w-10 hover:text-green-300">
               <GithubIcon />
             </a>
           </Sheet.Description>
@@ -52,7 +52,7 @@
           </Sheet.Close>
         </form>
         <Sheet.Footer class='my-2'>
-          <Button>Get In Touch</Button>
+          <!-- <Button>Get In Touch</Button> -->
         </Sheet.Footer>
       </Sheet.Content>
     </Sheet.Root>
@@ -82,4 +82,8 @@
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+  
+  .top-logo:hover > span {
+    @apply text-green-300 duration-75;
+  }
 </style>
